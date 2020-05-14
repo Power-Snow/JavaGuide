@@ -53,6 +53,7 @@
 ### redis 的线程模型
 
 > 参考地址:https://www.javazhiyin.com/22943.html
+> 参考地址2：https://juejin.im/post/5dabdb1ee51d45216d7b166a
 
 redis 内部使用文件事件处理器 `file event handler`，这个文件事件处理器是单线程的，所以 redis 才叫做单线程的模型。它采用 IO 多路复用机制同时监听多个 socket，根据 socket 上的事件来选择对应的事件处理器进行处理。
 
